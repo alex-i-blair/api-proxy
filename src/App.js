@@ -1,5 +1,6 @@
 import PokemonSearch from './PokemonSearch';
 import YelpSearch from './YelpSearch';
+import WeatherSearch from './WeatherSearch';
 
 // import WeatherSearch from './WeatherSearch';
 import './App.css';
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <PokemonSearch />
       <YelpSearch />
+      <WeatherSearch />
       {/* stretch goal: <WeatherSearch /> */}
     </div>
   );
