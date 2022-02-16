@@ -16,7 +16,6 @@ export default function PokemonSearch() {
     try {
       const response = await fetch(`/.netlify/functions/pokemon?search=${search}`);
       const json = await response.json();
-      console.log('Test test', json.results);
       setPokemon(json);
       setLoading(false);
     } catch (e) {
@@ -34,6 +33,10 @@ export default function PokemonSearch() {
       <form onSubmit={handlePokemonSubmit}>
         Search pokemon for a city
         <input onChange={(e) => setSearch(e.target.value)} value={search} />
+        {/* <select onChange={(e) => setSearchBy(e.target.value)}>
+          <option value="type_1">Search By Type</option>
+          <option value="pokemon">Search By Name</option>
+        </select> */}
         {/* add inputs/labels for city name, state, and country, using all the things we need with react forms. Don't forget to use the value property to sync these up with the default values in react state */}
         <button>Get pokemon</button>
       </form>
