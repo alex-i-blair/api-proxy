@@ -4,7 +4,7 @@ export default function Restaurant({ restaurants }) {
       {restaurants &&
         restaurants.map((restaurant, i) => (
           <div className="restaurant-item" key={restaurant.pokemon + i}>
-            <p>{restaurant.alias}</p>
+            <p>{restaurant.name}</p>
             <img src={restaurant.image_url} />
           </div>
         ))}
