@@ -3,7 +3,7 @@ export default function Restaurant({ restaurants }) {
     <div>
       {restaurants &&
         restaurants.map((restaurant, i) => (
-          <div className="restaurant-item" key={restaurant.pokemon + i}>
+          <div className="restaurant-item" key={restaurant.name + i}>
             <p>{restaurant.name}</p>
             <img src={restaurant.image_url} />
           </div>

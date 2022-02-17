@@ -18,7 +18,7 @@ export default function YelpSearch() {
       setRestaurants(json);
       setLoading(false);
     } catch (e) {
-      console.error(e);
+      // console.error(e);
     }
 
     // set the loading state to true
