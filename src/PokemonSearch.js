@@ -20,7 +20,7 @@ export default function PokemonSearch() {
       setPokemon(json.results);
       setLoading(false);
     } catch (e) {
-      console.error(e);
+      // console.error(e);
     }
     // set the loading state to true
     // use fetch to make a request to your netlify pokemon function. Be sure to pass the pokemon name as a query param in the URL
